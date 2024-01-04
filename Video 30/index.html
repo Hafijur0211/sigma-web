@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Variable</title>
+    <style>
+      :root {
+        --color: rgb(255, 60, 0);
+        --seccolor: rgb(174, 175, 229);
+        --defpad:23px;
+        --defop: 0.2;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        background-color: var(--color);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      ul li {
+        opacity: var(--defop);
+        list-style: none;
+        padding: var(--defpad);
+        border: 10px solid var(--seccolor);
+      }
+
+      ul li:first-child{
+        --color: rgb(9, 146, 89);
+        background-color: var(--color);
+      }
+
+      .container {
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      aliquam. Fuga adipisci dicta deleniti vero temporibus veritatis hic
+      molestiae eius ullam ut consectetur laboriosam tenetur alias animi aut
+      corrupti, quos, natus unde quae! Recusandae ex cumque beatae similique
+      quibusdam maxime pariatur asperiores hic facere rerum!
+    </div>
+  </body>
+</html>
