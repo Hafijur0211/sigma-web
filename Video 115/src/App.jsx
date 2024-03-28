@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import About from "./components/About";
+import User from "./components/User";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +32,15 @@ function App() {
         <>
           <Navbar />
           <About />{" "}
+        </>
+      ),
+    },
+    {
+      path: "/user/:username",
+      element: (
+        <>
+          <Navbar />
+          <User />
         </>
       ),
     },
