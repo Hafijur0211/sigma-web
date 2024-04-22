@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css object fir object cover</title>
+    <style>
+        .container {
+            height: 634px;
+            width: 688px;
+            border: 2px solid black;
+            /* background-color: aquamarine; */
+            background-image: url("https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            /* background-image: url("https://images.pexels.com/photos/19752383/pexels-photo-19752383/free-photo-of-freedom.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+            background-position: center center;
+        }
+
+        img {
+            height: 634px;
+            width: 688px;
+            /* object-fit: contain; */
+            /* object-fit: cover; */
+            /* object-position: top right; */
+            /* object-position: bottom right; */
+            /* object-fit: fill; */
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+    </div>
+</body>
+
+</html>
